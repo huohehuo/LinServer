@@ -1,5 +1,6 @@
 package WebSide;
 
+import ServerVueWeb.Bean.AppLinkBean;
 import Utils.JDBCUtil;
 import Utils.Lg;
 import WebSide.bean.UserLoginBean;
@@ -60,14 +61,36 @@ public class UserDao {
 		}
 		return list;
 	}
-
-	//获取公司项目数量
+	//是否存在用户
+	public String checkHasUser(String name,String pwd){
+		String num="";
+		try {
+			conn = JDBCUtil.getUserDbConn("");
+			String SQL = "SELECT COUNT(*) AS 数量 FROM Tb_User WHERE FName = ? and FPwd = ?";
+			sta = conn.prepareStatement(SQL);
+			sta.setString(1,name);
+			sta.setString(2,pwd);
+			rs = sta.executeQuery();
+			while (rs.next()) {
+				num = rs.getString("数量");
+			}
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			JDBCUtil.close(rs,sta,conn);
+		}
+		return num;
+	}
+	//是否存在用户
 	public String checkHasUser(String dbname){
 		String num="";
 		try {
 			conn = JDBCUtil.getUserDbConn(dbname);
-			String SQL = "SELECT COUNT(*) AS 数量 FROM Login_Base";
+			String SQL = "SELECT COUNT(*) AS 数量 FROM Tb_User WHERE FName_code = ?";
 			sta = conn.prepareStatement(SQL);
+			sta.setString(1,dbname);
 			rs = sta.executeQuery();
 			while (rs.next()) {
 				num = rs.getString("数量");
@@ -108,21 +131,17 @@ public class UserDao {
 	}
 
 	//添加公司信息
-	public boolean addUserDB(UserLoginBean company,String dbname){
+	public boolean addUserDB(AppLinkBean company,String dbname){
 		try {
 			conn = JDBCUtil.getUserDbConn(dbname);
-			String SQL = "INSERT INTO Login_Base (database, server_pwd,server_name,server_port,server_ip,user_pwd," +
-					"user_name,login_time,login_log) VALUES (?,?,?,?,?,?,?,?,?)";
+			String SQL = "INSERT INTO Tb_User (FName, FPwd,FName_code,FToken,FCreateTime,Img_Logo) VALUES (?,?,?,?,?,?)";
 			sta = conn.prepareStatement(SQL);
-			sta.setString(1,company.database);
-			sta.setString(2,company.server_pwd);
-			sta.setString(3,company.server_name);
-			sta.setString(4,company.server_port);
-			sta.setString(5,company.server_ip);
-			sta.setString(6,company.user_pwd);
-			sta.setString(7,company.user_name);
-			sta.setString(8,company.login_time);
-			sta.setString(9,company.login_log);
+			sta.setString(1,company.FName);
+			sta.setString(2,company.FPwd);
+			sta.setString(3,company.FName_code);
+			sta.setString(4,company.FToken);
+			sta.setString(5,company.FCreateTime);
+			sta.setString(6,company.Img_Logo);
 			int i = sta.executeUpdate();
 			if(i>0){
 				return true;
@@ -138,29 +157,16 @@ public class UserDao {
 		}
 		return false;
 	}
-	//修改公司信息(先查出是否包含appid所属的公司，再通过各个字段名更新数据)
-	public boolean changeUser(UserLoginBean company,String dbname){
+	//更新用户数据token
+	public boolean changeUser(AppLinkBean company, String dbname){
 		try {
 			conn = JDBCUtil.getUserDbConn(dbname);
-			String SQL = "UPDATE Login_Base set database=?, server_pwd=?,server_name=?,server_port=?,server_ip=?,user_pwd=?,login_time=?,login_log=?  WHERE user_name='"+company.user_name+"'";
+			String SQL = "UPDATE Tb_User set FToken=?  WHERE FName_code='"+dbname+"'";
 			Lg.e("更新数据库语句"+SQL);
 			sta = conn.prepareStatement(SQL);
-			sta.setString(1,company.database);
-			sta.setString(2,company.server_pwd);
-			sta.setString(3,company.server_name);
-			sta.setString(4,company.server_port);
-			sta.setString(5,company.server_ip);
-			sta.setString(6,company.user_pwd);
-//			sta.setString(7,company.user_name);
-			sta.setString(7,company.login_time);
-			sta.setString(8,company.login_log);
-//			sta.setString(12,company.AppVersion2);
-//			sta.setString(13,company.AppVersion3);
-//			sta.setString(14,company.user_num_max);
+			sta.setString(1,company.FToken);
 			int i = sta.executeUpdate();
 			if(i>0){
-				//更新版本信息表的app版本号
-//				changeUpgradeVersion(company);
 				return true;
 			}else{
 				JDBCUtil.close(rs,sta,conn);

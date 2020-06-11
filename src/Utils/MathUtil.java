@@ -41,6 +41,9 @@ public class MathUtil {
             return 0;
         } else {
             try{
+                if (string.contains(".")){
+                    return Integer.parseInt(Cut0(string));
+                }
                 return Integer.parseInt(string);
             }catch (Exception e){
                 return 0;

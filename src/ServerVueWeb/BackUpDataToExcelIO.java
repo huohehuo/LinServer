@@ -1,12 +1,7 @@
 package ServerVueWeb;
 
-import Bean.Company;
-import ServerVueWeb.Bean.BuyBean;
-import Utils.CommonUtil;
 import Utils.ExcelExport;
-import Utils.JDBCUtil;
 import Utils.Lg;
-import WebSide.CompanyDao;
 import WebSide.WebResponse;
 import com.google.gson.Gson;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -20,13 +15,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.util.List;
 
 /**
  * 用于备份公司信息表的数据到xls
  */
-@WebServlet(urlPatterns = "/BackUpBuyBean")
-public class BackUpBuyBean extends HttpServlet {
+@WebServlet(urlPatterns = "/BackUpDataToExcelIO")
+public class BackUpDataToExcelIO extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Gson gson = new Gson();
         response.setCharacterEncoding("UTF-8");
@@ -47,8 +41,6 @@ public class BackUpBuyBean extends HttpServlet {
         HSSFWorkbook wb = export.generateExcel();
         wb = export.generateExcelSheet(wb, "备份数据", fields, pBean);
         export.writeExcelToDisk(wb, "备份数据.xlsx");
-
-
 
         Connection conn = null;
         PreparedStatement sta = null;

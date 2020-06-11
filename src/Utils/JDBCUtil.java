@@ -1,4 +1,7 @@
 package Utils;
+import WebSide.Utils.FileControl;
+import WebSide.Utils.Info;
+
 import java.sql.*;
 
 public class JDBCUtil {
@@ -58,10 +61,29 @@ public class JDBCUtil {
 
 	public static Connection getUserDbConn(String dbname) throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
-		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/web/dbWebAppBase"+dbname+".db");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbUser.db");
+		return conn;
+	}
+	public static Connection getUserDataConn(String dbname) throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		try {
+			//当指定文件不存在时，定位到基础db文件，避免生成0kb的程序影响后续操作
+			if (!FileControl.hasFile(Info.copyUserDataFile(dbname))){
+				Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/app/dbUserData.db");
+				return conn;
+			}
+		} catch (Exception e) {
+			Lg.e("文件或数据处理出错....");
+		}
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/app/dbUserData"+dbname+".db");
 		return conn;
 	}
 
+//	public static Connection getUserDbConn(String dbname) throws ClassNotFoundException, SQLException{
+//		Class.forName("org.sqlite.JDBC");
+//		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/web/dbWebAppBase"+dbname+".db");
+//		return conn;
+//	}
 
 	public static void close(ResultSet rs,PreparedStatement sta,Connection connection){
 		if(rs!=null){

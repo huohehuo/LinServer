@@ -12,6 +12,9 @@ public class AddrBean {
     public String FIsCloud;//是否备份云端
     public String FUseNum;//使用次数
     public String FMapID;//地图经纬
+    public AddrBean(){
+
+    }
     public AddrBean(String name, String data){
         FName = name;
         FCreateData = data;

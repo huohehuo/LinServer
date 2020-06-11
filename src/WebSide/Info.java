@@ -2,7 +2,7 @@ package WebSide;
 
 public class Info {
 	public static String BaseDbFile="C:\\properties\\web\\dbWebAppBase.db";
-	public static String BaseVueLink="192.168.0.105:8085/Assist";
+	public static String BaseVueLink="192.168.31.55:8085/Assist";
 //	public static String BaseVueLink="148.70.108.65:8080/LogAssist";
 
 	public static String copyDbFile(String name){
@@ -16,4 +16,7 @@ public class Info {
 	public static String FServerPwdKey="ServerPwdKey";
 	public static String FDatabaseKey="DatabaseKey";
 	public static String FUserDbName="UserDbName";
+
+	public static String FUser_Code="FUser_Code";
+	public static String FUser_Home_To_Detail="FUser_Home_To_Detail";
 }

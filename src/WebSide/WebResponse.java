@@ -4,12 +4,15 @@ import Bean.Company;
 import ServerVueWeb.Bean.AddrBean;
 import ServerVueWeb.Bean.BuyAtBean;
 import ServerVueWeb.Bean.BuyBean;
+import ServerVueWeb.Bean.NoteBean;
 
 import java.util.ArrayList;
 
 public class WebResponse {
 	public boolean state;
 	public String backString;
+	public String json;
+	public String FToken;
 	public int size;
 	public WebResponse() {
 		this.backString = "";
@@ -35,6 +38,7 @@ public class WebResponse {
 	public ArrayList<BuyBean> buyBeans;
 	public ArrayList<BuyAtBean> buyAtBeans;
 	public ArrayList<AddrBean> addrBeans;
+	public ArrayList<NoteBean> noteBeans;
 
 	//账套列表
 	public class DataBaseList{
