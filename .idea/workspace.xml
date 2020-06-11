@@ -9,74 +9,59 @@
     <bookmark url="file://$PROJECT_DIR$/src/Server/prop/GetFile.java" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="调整版本更新界面">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppGetAllDataIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppGetAllDataSizeIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppGetNoteDataIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppLoginIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeToDetailDelIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeToDetailIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/BackUpAppDataIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/BackUpDataToExcelIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/Bean/AppLinkBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/Bean/NoteBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/UpdataAppDataDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WebSide/Utils/ImageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpBuyBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpBuyBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/AddrBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/AddrBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/ExcelExport.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/ExcelExport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/JDBCUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/JDBCUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/MathUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/MathUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/Info.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/Info.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/Utils/Info.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/Utils/Info.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CheckLogBackBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CheckLogBackBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Client.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CodeCheckBackDataBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CodeCheckBackDataBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CqPdPlanBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$CqPdPlanBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$DataBaseList.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$DataBaseList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$MdUser.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$MdUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$PDSub.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$PDSub.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Product.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$ProductType.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$ProductType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$SoldOutSortBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$SoldOutSortBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Storage.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Storage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Suppliers4P2.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse$Suppliers4P2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/WebResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpBuyBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpBuyBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/AddrBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/AddrBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/ExcelExport.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/ExcelExport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/JDBCUtil.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/JDBCUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/MathUtil.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/MathUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/Info.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/Info.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/UserDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/Utils/Info.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/Utils/Info.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CheckLogBackBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CheckLogBackBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Client.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CodeCheckBackDataBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CodeCheckBackDataBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CqPdPlanBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$CqPdPlanBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$DataBaseList.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$DataBaseList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$MdUser.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$MdUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$PDSub.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$PDSub.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Product.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$ProductType.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$ProductType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$SoldOutSortBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$SoldOutSortBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Storage.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Storage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Suppliers4P2.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse$Suppliers4P2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/WebResponse.class" />
+    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/app/dbUserData.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/app/dbUserData9d8a121ce581499d.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/app/dbUserDatae6ac95ea2c0343a2.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppGetAllDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppGetNoteDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppWebHomeIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppWebHomeToDetailDelIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppWebHomeToDetailIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpDataToExcelIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/AppLinkBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/NoteBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/Utils/ImageUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/fonts/mui.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppGetAllDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppGetNoteDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppWebHomeIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppWebHomeToDetailDelIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppWebHomeToDetailIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpDataToExcelIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/AppLinkBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/NoteBean.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/Utils/ImageUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200530-102613.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200601-115507.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200602-111201.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200603-113103.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200605-075357.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200606-063054.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200607-073258.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200607-123023.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200608-090507.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200610-103719.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200610-120829.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200611-085312.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppAbout.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHome.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHomeToDetail.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHomeddddd.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/css/mui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/css/mui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/js/mui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/js/mui.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/headLayout.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Assist/headLayout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerVueWeb/BackUpBuyBean.java" afterPath="$PROJECT_DIR$/src/ServerVueWeb/BackUpBuyBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerVueWeb/Bean/AddrBean.java" afterPath="$PROJECT_DIR$/src/ServerVueWeb/Bean/AddrBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/ExcelExport.java" afterPath="$PROJECT_DIR$/src/Utils/ExcelExport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/JDBCUtil.java" afterPath="$PROJECT_DIR$/src/Utils/JDBCUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/MathUtil.java" afterPath="$PROJECT_DIR$/src/Utils/MathUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebSide/Info.java" afterPath="$PROJECT_DIR$/src/WebSide/Info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebSide/UserDao.java" afterPath="$PROJECT_DIR$/src/WebSide/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebSide/Utils/FileControl.java" afterPath="$PROJECT_DIR$/src/WebSide/Utils/FileControl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebSide/Utils/Info.java" afterPath="$PROJECT_DIR$/src/WebSide/Utils/Info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebSide/WebResponse.java" afterPath="$PROJECT_DIR$/src/WebSide/WebResponse.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -117,8 +102,8 @@
       <file leaf-file-name="JDBCUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Utils/JDBCUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="71" column="91" lean-forward="true" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+            <state relative-caret-position="372">
+              <caret line="103" column="18" lean-forward="false" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -716,6 +701,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1756,7 +1759,7 @@
       <workItem from="1591621522792" duration="3308000" />
       <workItem from="1591718919811" duration="1793000" />
       <workItem from="1591799852707" duration="5599000" />
-      <workItem from="1591880001540" duration="10852000" />
+      <workItem from="1591880001540" duration="11049000" />
     </task>
     <task id="LOCAL-00001" summary="调整">
       <created>1578969882554</created>
@@ -1842,11 +1845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588236973396</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="新增标签记账的web数据展示">
+      <created>1591894623056</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591894623056</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1511512000" />
+    <option name="totallyTimeSpent" value="1511709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1871,7 +1881,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42222223" sideWeight="0.51354164" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5010846" sideWeight="0.48645833" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5010846" sideWeight="0.48645833" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
@@ -1928,7 +1938,8 @@
     <MESSAGE value="数据中心添加登录session登录验证" />
     <MESSAGE value="注册用户列表改用vue，可按时间显示" />
     <MESSAGE value="调整版本更新界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整版本更新界面" />
+    <MESSAGE value="新增标签记账的web数据展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增标签记账的web数据展示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2416,8 +2427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/JDBCUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="71" column="91" lean-forward="true" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
+        <state relative-caret-position="372">
+          <caret line="103" column="18" lean-forward="false" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
