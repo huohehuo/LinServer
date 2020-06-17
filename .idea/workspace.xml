@@ -9,23 +9,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/Server/prop/GetFile.java" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppWebAddDetailIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ServerVueWeb/WebJumpIO.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/app/dbUserData.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/app/dbUserData9d8a121ce581499d.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/app/dbUserDatae6ac95ea2c0343a2.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/PushDown/PushDownloadList.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/PushDown/PushDownloadList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/PushDown/PushDownloadList.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/PushDown/PushDownloadList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/UpdataAppDataDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHome.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHomeToDetail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App/AppHomeToDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java" afterPath="$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeToDetailDelIO.java" afterPath="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeToDetailDelIO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerVueWeb/UpdataAppDataDao.java" afterPath="$PROJECT_DIR$/src/ServerVueWeb/UpdataAppDataDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/CommonUtil.java" afterPath="$PROJECT_DIR$/src/Utils/CommonUtil.java" />
+    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="新增标签记账的web数据添加页面">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist.zip" afterPath="$PROJECT_DIR$/out/artifacts/Assist.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/CommonUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/CommonUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/CommonUtil.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/CommonUtil.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -90,8 +77,8 @@
       <file leaf-file-name="BackUpAppDataIO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/BackUpAppDataIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -1646,7 +1633,7 @@
       <workItem from="1591880001540" duration="11250000" />
       <workItem from="1592060153929" duration="2233000" />
       <workItem from="1592311202493" duration="5486000" />
-      <workItem from="1592394019306" duration="9844000" />
+      <workItem from="1592394019306" duration="10098000" />
     </task>
     <task id="LOCAL-00001" summary="调整">
       <created>1578969882554</created>
@@ -1746,11 +1733,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591894776620</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="新增标签记账的web数据添加页面">
+      <created>1592409402277</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592409402277</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1529473000" />
+    <option name="totallyTimeSpent" value="1529727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1833,7 +1827,8 @@
     <MESSAGE value="注册用户列表改用vue，可按时间显示" />
     <MESSAGE value="调整版本更新界面" />
     <MESSAGE value="新增标签记账的web数据展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增标签记账的web数据展示" />
+    <MESSAGE value="新增标签记账的web数据添加页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增标签记账的web数据添加页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2403,8 +2398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/BackUpAppDataIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
           <folding />
         </state>
       </provider>
