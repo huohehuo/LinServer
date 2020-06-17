@@ -24,7 +24,8 @@ import java.util.ArrayList;
 
 //获取单据的订单信息
 @WebServlet("/PushDownloadList")
-public class PushDownloadList extends HttpServlet {
+public class
+PushDownloadList extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");

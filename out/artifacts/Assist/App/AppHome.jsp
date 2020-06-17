@@ -20,7 +20,7 @@
 <%@ page import="ServerVueWeb.Bean.NoteBean" %>
 <html>
 <head>
-    <title>注册用户管理</title>
+    <title>详情</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>

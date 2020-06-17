@@ -168,7 +168,7 @@ public class UpdataAppDataDao {
 				bean.FMapID = rs.getString("FMapID");
 				noteBeans.add(bean);
 			}
-			Lg.e("数据获取完成");
+			Lg.e("数据获取完成",noteBeans);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 			JDBCUtil.close(rs,sta,conn);
@@ -180,6 +180,7 @@ public class UpdataAppDataDao {
 		}
 		return noteBeans;
 	}
+	//获取明细数量
 	public String getBuyAtDataSize(String filename,String buyname){
 		Lg.e("查询",filename+"___"+buyname);
 		String noteBeans = "";
@@ -204,6 +205,7 @@ public class UpdataAppDataDao {
 		}
 		return noteBeans;
 	}
+	//执行删除明细操作
 	public boolean getBuyAtDataDelForApp(String filename,String buyname,String delAddr){
 		Lg.e("查询",filename+"___"+buyname+"___"+delAddr);
 		boolean isOk=false ;
@@ -226,7 +228,7 @@ public class UpdataAppDataDao {
 		return isOk;
 	}
 
-	//保存用户的数据
+	//获取所有数据
 	public boolean getAllDataForApp(WebResponse webResponse,String filename){
 		webResponse.addrBeans = new ArrayList<>();
 		webResponse.buyAtBeans = new ArrayList<>();
@@ -305,7 +307,7 @@ public class UpdataAppDataDao {
 		return back;
 	}
 
-	//保存用户的数据
+	//获取所有数据size
 	public String getDataCountForApp(String filename){
 		double num=0d;
 		try {
@@ -342,6 +344,57 @@ public class UpdataAppDataDao {
 		}
 		return num+"";
 	}
+
+
+	//保存用户的数据
+	public boolean saveBuyAtForWebApp(BuyAtBean buyAtBeans,String filename){
+		boolean back = true;
+		try {
+			conn = JDBCUtil.getUserDataConn(filename);//关联用户对应的数据文件
+			//获取buyBean的fid
+			String fid="100000";
+//			BuyBean buyBean = new BuyBean();
+			String buy = "SELECT FID,FName FROM Tb_BuyBean WHERE FName = '"+buyAtBeans.FBuyName+"'";
+			sta = conn.prepareStatement(buy);
+			rs = sta.executeQuery();
+			while (rs.next()) {
+				fid = rs.getString("FID");
+//				buyBean.FID = rs.getString("FID");
+//				buyBean.FCreateData = rs.getString("FCreateData");
+			}
+			Lg.e("得到fid",fid);
+			String buyat = "INSERT INTO Tb_BuyAtBean (FID, FName,FNum,FAddrID,FAddrName,FBuyID,FBuyName,FCreateData) VALUES (?,?,?,?,?,?,?,?)";
+			sta = conn.prepareStatement(buyat);
+				sta.setString(1,buyAtBeans.FID);
+				sta.setString(2,"");
+				sta.setString(3,buyAtBeans.FNum);
+				sta.setString(4,"0");
+				sta.setString(5,buyAtBeans.FAddrName);
+				sta.setString(6,fid);
+				sta.setString(7,buyAtBeans.FBuyName);
+				sta.setString(8,buyAtBeans.FCreateData);
+				sta.executeUpdate();
+			Lg.e("数据新增完成",buyAtBeans);
+		} catch (ClassNotFoundException e) {
+			back = false;
+			e.printStackTrace();
+			JDBCUtil.close(rs,sta,conn);
+		} catch (SQLException e) {
+			back = false;
+			e.printStackTrace();
+			JDBCUtil.close(rs,sta,conn);
+		}finally {
+			JDBCUtil.close(rs,sta,conn);
+		}
+		return back;
+	}
+
+
+
+
+
+
+
 
 
 	//获取所有版本信息

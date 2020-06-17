@@ -74,14 +74,20 @@
     String tips = (String) request.getAttribute("tips");
 %>
 <h5 ><%=tips%></h5>--%>
+<script>
+    function gotoAdd()
+    {
+        window.location.href="AppAddDetail.jsp";
+    }
 
+</script>
 <hr/>
 <header class="mui-bar mui-bar-nav">
     <%--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="../AppWebHomeIO?json=<%=userCode%>"></a>--%>
     <a class="mui-icon mui-icon-left-nav mui-pull-left" href="../AppWebHomeIO?json=<%=userCode%>"></a>
     <h1 class="mui-title"><%=buyName%></h1>
+        <button class=" mui-btn " style="float:right" type="button" onclick="gotoAdd()">添加</button>
 </header>
-
 
 <div style="margin: 50px">
     <ul class="mui-table-view">

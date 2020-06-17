@@ -16,7 +16,11 @@ public class CommonUtil {
         Date curDate = new Date();
         return format.format(curDate);
     }
-
+    public static String getTimeLongID(boolean dia){
+        SimpleDateFormat format = new SimpleDateFormat( dia ? "yyyy-MM-dd HH:mm:ss" : "yyyyMMddHHmmss");
+        Date curDate = new Date();
+        return format.format(curDate);
+    }
     private static final String PATH = "C:\\properties\\";
     //读取本地的txt文件
     public static String getString4pwd() {

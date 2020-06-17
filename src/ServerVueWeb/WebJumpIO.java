@@ -15,18 +15,16 @@ import java.io.IOException;
 /**
  * 用于程序访问页面跳转
  */
-@WebServlet(urlPatterns = "/AppWebHomeToDetailDelIO")
-public class AppWebHomeToDetailDelIO extends HttpServlet {
+@WebServlet(urlPatterns = "/WebJumpIO")
+public class WebJumpIO extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
+//        UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
 //        String getbody = null;
         HttpSession session = request.getSession(true);
-        String addrnameTime = request.getParameter("json");
-        String buyname = (String) session.getAttribute(Info.FUser_Home_To_Detail);
-        String userCode = (String) session.getAttribute(Info.FUser_Code);
-        Lg.e("进入AppWebHomeToDetailIO",buyname);
+        String filename = request.getParameter("json");
+        Lg.e("到达AppWebHomeIO",filename);
 //        try {
 //            parameter = ReadAsChars(request);//解密数据
 //        } catch (Exception e) {
@@ -42,9 +40,12 @@ public class AppWebHomeToDetailDelIO extends HttpServlet {
 //        } catch (Exception e) {
 //            Lg.e("文件或数据处理出错....");
 //        }
-        //执行删除
-        updataAppDataDao.getBuyAtDataDelForApp(userCode,buyname,addrnameTime);
-        response.sendRedirect(request.getContextPath()+"/App/AppHomeToDetail.jsp");
+
+        session.setAttribute(Info.FUser_Code, filename);
+//        response.sendRedirect(request.getContextPath()+"/App/AppHome.jsp");
+//        String url = "http://" + wrt_ip + ":" + wrt_port + "/Assist/RegisterCode?json=" + lastRegister;
+//        Lg.e("网址:"+url);
+        response.sendRedirect("https://www.baidu.com");
 //        response.getWriter().write(new Gson().toJson(updataAppDataDao.getNoteDataForApp(filename)));
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

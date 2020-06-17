@@ -1,5 +1,7 @@
 package ServerVueWeb;
 
+import ServerVueWeb.Bean.BuyAtBean;
+import Utils.CommonUtil;
 import Utils.Lg;
 import WebSide.Info;
 
@@ -15,18 +17,21 @@ import java.io.IOException;
 /**
  * 用于程序访问页面跳转
  */
-@WebServlet(urlPatterns = "/AppWebHomeToDetailDelIO")
-public class AppWebHomeToDetailDelIO extends HttpServlet {
+@WebServlet(urlPatterns = "/AppWebAddDetailIO")
+public class AppWebAddDetailIO extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
 //        String getbody = null;
         HttpSession session = request.getSession(true);
-        String addrnameTime = request.getParameter("json");
+        String note = request.getParameter("note");
+        String num = request.getParameter("num");
+        Lg.e("得到数据",note);
+        Lg.e("得到数据",num);
         String buyname = (String) session.getAttribute(Info.FUser_Home_To_Detail);
         String userCode = (String) session.getAttribute(Info.FUser_Code);
-        Lg.e("进入AppWebHomeToDetailIO",buyname);
+        Lg.e("AppWebAddDetailIO",buyname);
 //        try {
 //            parameter = ReadAsChars(request);//解密数据
 //        } catch (Exception e) {
@@ -42,8 +47,13 @@ public class AppWebHomeToDetailDelIO extends HttpServlet {
 //        } catch (Exception e) {
 //            Lg.e("文件或数据处理出错....");
 //        }
-        //执行删除
-        updataAppDataDao.getBuyAtDataDelForApp(userCode,buyname,addrnameTime);
+        BuyAtBean buyAtBean = new BuyAtBean();
+        buyAtBean.FID =  CommonUtil.getTimeLongID(false);
+        buyAtBean.FAddrName = note;
+        buyAtBean.FBuyName = buyname;
+        buyAtBean.FNum = num;
+        buyAtBean.FCreateData = CommonUtil.getTimeLongID(true);
+        updataAppDataDao.saveBuyAtForWebApp(buyAtBean,userCode);
         response.sendRedirect(request.getContextPath()+"/App/AppHomeToDetail.jsp");
 //        response.getWriter().write(new Gson().toJson(updataAppDataDao.getNoteDataForApp(filename)));
     }
