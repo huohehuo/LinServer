@@ -1,7 +1,7 @@
 package ServerVueWeb;
 
+import ServerVueWeb.Dao.UpdataAppDataDao;
 import Utils.Lg;
-import Utils.MD5;
 import Utils.MathUtil;
 import WebSide.UserDao;
 import WebSide.Utils.FileControl;
@@ -22,8 +22,13 @@ import java.io.IOException;
  */
 @WebServlet(urlPatterns = "/AppGetAllDataSizeIO")
 public class AppGetAllDataSizeIO extends HttpServlet {
+    Gson gson;
+    @Override
+    public void init() throws ServletException {
+        Lg.e("初始化"+getClass().getSimpleName());
+        gson = new Gson();
+    }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Gson gson = new Gson();
         UserDao userDao = new UserDao();
         UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
@@ -41,10 +46,8 @@ public class AppGetAllDataSizeIO extends HttpServlet {
         boolean isOK=false;
         String filename="";
         try {
-            //复制db文件并重命名为登录用户的所属db文件
-//           filename = MD5.getMD5(webResponse.json);//避免中文时乱码，都一律转换成md5
-           filename = webResponse.json;//避免中文时乱码，都一律转换成md5
-            if (FileControl.hasFile(Info.copyUserDataFile(filename))){
+           filename = webResponse.json;//此为经过md5转换过的用户名code
+            if (FileControl.hasFile(Info.copyUserDataFile(filename))){//根据用户名code，查找相关db文件是否存在
                 isOK = true;
             }
         } catch (Exception e) {

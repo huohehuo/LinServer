@@ -26,13 +26,15 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<%--<body>--%>
-
-<frameset rows="56,*" frameborder="no" border="0">
+<body>
+<%
+    response.sendRedirect(request.getContextPath()+"/App/AppWebLogin.jsp");
+%>
+<%--<frameset rows="56,*" frameborder="no" border="0">
     <frame src="item_TopNavbar.jsp" scrolling="no">
     <frame src="Home.jsp" name="index_show" scrolling="auto">
-</frameset>
-<%--</body>--%>
+</frameset>--%>
+</body>
 
 
 </html>

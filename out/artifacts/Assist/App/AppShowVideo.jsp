@@ -8,16 +8,7 @@
 <%@ page language="java" import="java.util.*" import="Bean.RegisterBean" import="WebSide.WebDao"
          contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="WebSide.CompanyDao" %>
-<%@ page import="WebSide.Info" %>
-<%@ page import="Bean.Company" %>
-<%@ page import="Utils.BaseData" %>
-<%@ page import="Utils.ExcelExport" %>
-<%@ page import="org.apache.poi.hssf.usermodel.HSSFWorkbook" %>
-<%@ page import="WebSide.StatisticalDao" %>
-<%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="ServerVueWeb.UpdataAppDataDao" %>
-<%@ page import="ServerVueWeb.Bean.NoteBean" %>
+<%@ page import="ServerVueWeb.Dao.UpdataAppDataDao" %>
 <html>
 <head>
     <title>注册用户管理</title>

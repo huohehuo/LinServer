@@ -1,10 +1,8 @@
 package ServerVueWeb;
 
+import ServerVueWeb.Dao.UpdataAppDataDao;
 import Utils.Lg;
-import Utils.MD5;
-import Utils.MathUtil;
 import WebSide.UserDao;
-import WebSide.WebResponse;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -20,15 +18,20 @@ import java.io.IOException;
  */
 @WebServlet(urlPatterns = "/AppGetNoteDataIO")
 public class AppGetNoteDataIO extends HttpServlet {
+    Gson gson;
+    @Override
+    public void init() throws ServletException {
+        Lg.e("初始化"+getClass().getSimpleName());
+        gson = new Gson();
+    }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Gson gson = new Gson();
         UserDao userDao = new UserDao();
         UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
         String getbody = null;
         String parameter = null;
-        Lg.e("到达AppGetAllDataIO");
+        Lg.e("到达"+getClass().getSimpleName());
 //        try {
 //            parameter = ReadAsChars(request);//解密数据
 //        } catch (Exception e) {

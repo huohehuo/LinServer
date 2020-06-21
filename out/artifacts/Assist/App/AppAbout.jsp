@@ -9,13 +9,7 @@
          contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ page import="WebSide.Info" %>
-<%@ page import="Bean.Company" %>
-<%@ page import="Utils.BaseData" %>
-<%@ page import="Bean.TestB" %>
-<%@ page import="WebSide.StatisticalDao" %>
-<%@ page import="com.google.gson.Gson" %>
 <%@ page import="Utils.CommonUtil" %>
-<%@ page import="Bean.RegisterCodeBean" %>
 <html>
 <head>
     <title>注册用户管理</title>

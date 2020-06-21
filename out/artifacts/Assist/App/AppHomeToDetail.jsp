@@ -8,17 +8,10 @@
 <%@ page language="java" import="java.util.*" import="Bean.RegisterBean" import="WebSide.WebDao"
          contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="WebSide.CompanyDao" %>
 <%@ page import="WebSide.Info" %>
-<%@ page import="Bean.Company" %>
-<%@ page import="Utils.BaseData" %>
-<%@ page import="Utils.ExcelExport" %>
-<%@ page import="org.apache.poi.hssf.usermodel.HSSFWorkbook" %>
-<%@ page import="WebSide.StatisticalDao" %>
-<%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="ServerVueWeb.UpdataAppDataDao" %>
-<%@ page import="ServerVueWeb.Bean.NoteBean" %>
+<%@ page import="ServerVueWeb.Dao.UpdataAppDataDao" %>
 <%@ page import="ServerVueWeb.Bean.BuyAtBean" %>
+<%@ page import="Utils.Lg" %>
 <html>
 <head>
     <title>注册用户管理</title>
@@ -51,6 +44,7 @@
 </head>
 <body>
 <%
+    Lg.e("登录jsp",getClass().getSimpleName());
     String userCode = (String)session.getAttribute(Info.FUser_Code);
     String buyName = (String)session.getAttribute(Info.FUser_Home_To_Detail);
 //    String userCode = "9a2c9e2e995c577b";
@@ -59,21 +53,6 @@
 //    }
 
 %>
-<%--<jsp:include page="../headLayout.jsp"/>--%>
-<%--
-<%
-    WebDao aa = new WebDao();
-//    List list = (List) request.getAttribute("pl_list");
-    List list = aa.getRegister();
-
-
-    for (int i = 0; i < list.size(); i++) {
-        RegisterBean rs = (RegisterBean) list.get(i);
-%>--%>
-<%--<%
-    String tips = (String) request.getAttribute("tips");
-%>
-<h5 ><%=tips%></h5>--%>
 <script>
     function gotoAdd()
     {

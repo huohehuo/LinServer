@@ -16,9 +16,8 @@
 <%@ page import="org.apache.poi.hssf.usermodel.HSSFWorkbook" %>
 <%@ page import="WebSide.StatisticalDao" %>
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="ServerVueWeb.UpdataAppDataDao" %>
-<%@ page import="ServerVueWeb.Bean.NoteBean" %>
-<%@ page import="ServerVueWeb.Bean.BuyAtBean" %>
+<%@ page import="ServerVueWeb.Dao.UpdataAppDataDao" %>
+<%@ page import="Utils.Lg" %>
 <html>
 <head>
     <title>数据添加</title>
@@ -51,6 +50,7 @@
 </head>
 <body>
 <%
+    Lg.e("登录jsp",getClass().getSimpleName());
     String userCode = (String) session.getAttribute(Info.FUser_Code);
     String buyName = (String) session.getAttribute(Info.FUser_Home_To_Detail);
     UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();

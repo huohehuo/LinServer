@@ -1,15 +1,13 @@
 package ServerVueWeb;
 
-import Utils.ExcelExport;
+import ServerVueWeb.Dao.UpdataAppDataDao;
 import Utils.Lg;
-import Utils.MD5;
 import Utils.MathUtil;
 import WebSide.UserDao;
 import WebSide.Utils.FileControl;
 import WebSide.Utils.Info;
 import WebSide.WebResponse;
 import com.google.gson.Gson;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,17 +16,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 /**
- * 用于备份公司信息表的数据到xls
+ * app数据备份
  */
 @WebServlet(urlPatterns = "/BackUpAppDataIO")
 public class BackUpAppDataIO extends HttpServlet {
+    Gson gson;
+    @Override
+    public void init() throws ServletException {
+        Lg.e("初始化"+getClass().getSimpleName());
+        gson = new Gson();
+    }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        Gson gson = new Gson();
         UserDao userDao = new UserDao();
         UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
@@ -46,16 +46,13 @@ public class BackUpAppDataIO extends HttpServlet {
         boolean isOK;
         String filename="";
         try {
-            //复制db文件并重命名为登录用户的所属db文件
-//           filename = MD5.getMD5(webResponse.json);//避免中文时乱码，都一律转换成md5
-           filename = webResponse.json;//避免中文时乱码，都一律转换成md5
-            Lg.e("生成名字编码",filename);
+           filename = webResponse.json;//此为经过md5转换过的用户名code
             if (FileControl.hasFile(Info.copyUserDataFile(filename))) {//存在该用户相应的数据文件
                 Lg.e("存在用户数据文件");
                 isOK = updataAppDataDao.saveDataForApp(webResponse,filename);
             } else {//不存在文件，创建
                 Lg.e("不存在用户数据文件---新建");
-                FileControl.copyFile(Info.BaseUserDataFile, Info.copyUserDataFile(filename));
+                FileControl.copyFile(Info.BaseUserDataFile, Info.copyUserDataFile(filename)); //复制db文件并重命名为登录用户的所属db文件
                 isOK = updataAppDataDao.saveDataForApp(webResponse,filename);
             }
         } catch (Exception e) {

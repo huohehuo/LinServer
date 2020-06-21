@@ -24,20 +24,24 @@ import java.util.Date;
 import static WebSide.Utils.HttpRequestUtils.ReadAsChars;
 
 /**
- * 用于更新时间控制表的当前时间
+ * 用于app登录；
  */
 @WebServlet(urlPatterns = "/AppLoginIO")
 public class AppLoginIO extends HttpServlet {
+    Gson gson;
+    @Override
+    public void init() throws ServletException {
+        Lg.e("初始化"+getClass().getSimpleName());
+        gson = new Gson();
+    }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
-        Lg.e("进入AppLoginIO");
-        Gson gson = new Gson();
+        Lg.e("进入"+getClass().getSimpleName());
         UserDao userDao = new UserDao();
         String getbody=null;
         String filename="";
         String parameter= null;
-        Lg.e("到达");
         try{
             parameter = ReadAsChars(request);//解密数据
         }catch (Exception e){

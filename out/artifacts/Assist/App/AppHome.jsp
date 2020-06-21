@@ -8,16 +8,11 @@
 <%@ page language="java" import="java.util.*" import="Bean.RegisterBean" import="WebSide.WebDao"
          contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="WebSide.CompanyDao" %>
 <%@ page import="WebSide.Info" %>
-<%@ page import="Bean.Company" %>
-<%@ page import="Utils.BaseData" %>
-<%@ page import="Utils.ExcelExport" %>
-<%@ page import="org.apache.poi.hssf.usermodel.HSSFWorkbook" %>
-<%@ page import="WebSide.StatisticalDao" %>
-<%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="ServerVueWeb.UpdataAppDataDao" %>
+<%@ page import="ServerVueWeb.Dao.UpdataAppDataDao" %>
 <%@ page import="ServerVueWeb.Bean.NoteBean" %>
+<%@ page import="Utils.CommonUtil" %>
+<%@ page import="Utils.Lg" %>
 <html>
 <head>
     <title>详情</title>
@@ -49,28 +44,17 @@
 
 <body>
 <%
+    Lg.e("登录jsp",getClass().getSimpleName());
+    response.setCharacterEncoding("UTF-8");
+    request.setCharacterEncoding("UTF-8");
     String userCode = (String)session.getAttribute(Info.FUser_Code);
+    String baseUrl = request.getContextPath();
 //    String userCode = "9a2c9e2e995c577b";
 //    if (null == userName || "".equals(userName)){//若本地session不存在登录用户的缓存数据，则跳到登录界面
 //        response.sendRedirect(request.getContextPath()+"/MGM/login.jsp");
 //    }
 
 %>
-<%--<jsp:include page="../headLayout.jsp"/>--%>
-<%--
-<%
-    WebDao aa = new WebDao();
-//    List list = (List) request.getAttribute("pl_list");
-    List list = aa.getRegister();
-
-
-    for (int i = 0; i < list.size(); i++) {
-        RegisterBean rs = (RegisterBean) list.get(i);
-%>--%>
-<%--<%
-    String tips = (String) request.getAttribute("tips");
-%>
-<h5 ><%=tips%></h5>--%>
 
 <hr/>
 <header class="mui-bar mui-bar-nav">
@@ -90,12 +74,13 @@
 
             for (int i = 0; i < list.size(); i++) {
                 NoteBean rs = (NoteBean) list.get(i);
+                String Url = baseUrl+"/AppWebHomeToDetailIO?json="+ CommonUtil.getURLEncoderString(rs.NBuyName);
+//                String Url = new String(Urlss.getBytes("UTF-8"),"UTF-8");
         %>
         <li class="mui-table-view-cell">
-            <a class="mui-navigate-right" href="../AppWebHomeToDetailIO?json=<%=rs.NBuyName%>"><%=rs.NBuyName%></a>
-            <span class="mui-badge mui-badge-success"><a href="../AppWebHomeToDetailIO?json=<%=rs.NBuyName%>">详情</a></span>
+            <a class="mui-navigate-right" href="<%=Url%>"><%=rs.NBuyName%></a>
+            <span class="mui-badge mui-badge-success"><a href="<%=Url%>">详情</a></span>
             <div class="mui-media-body">
-
                 <p class='mui-ellipsis'>条数:<%=updataAppDataDao.getBuyAtDataSize(userCode,rs.NBuyName) %><p class='mui-ellipsis'><%=rs.Ntime %></p></p>
             </div>
         </li>

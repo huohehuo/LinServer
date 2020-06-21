@@ -94,14 +94,14 @@ public class FileControl {
 
         if (file.isFile()) {
             if (file.exists()) {
-                Lg.e("exists_true");
+                Lg.e("exists_true文件存在");
                 return true;
             }else{
-                Lg.e("exists_true");
+                Lg.e("exists_true不存在文件");
                 return false;
             }
         }else{
-            Lg.e("isFile_false");
+            Lg.e("isFile_false不存在文件");
             return false;
         }
     }

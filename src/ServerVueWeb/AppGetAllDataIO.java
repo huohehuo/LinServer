@@ -1,11 +1,9 @@
 package ServerVueWeb;
 
+import ServerVueWeb.Dao.UpdataAppDataDao;
 import Utils.Lg;
-import Utils.MD5;
 import Utils.MathUtil;
 import WebSide.UserDao;
-import WebSide.Utils.FileControl;
-import WebSide.Utils.Info;
 import WebSide.WebResponse;
 import com.google.gson.Gson;
 
@@ -18,19 +16,24 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
- * 用于备份公司信息表的数据到xls
+ * app获取已备份的所有数据
  */
 @WebServlet(urlPatterns = "/AppGetAllDataIO")
 public class AppGetAllDataIO extends HttpServlet {
+    Gson gson;
+    @Override
+    public void init() throws ServletException {
+        Lg.e("初始化"+getClass().getSimpleName());
+        gson = new Gson();
+    }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Gson gson = new Gson();
         UserDao userDao = new UserDao();
         UpdataAppDataDao updataAppDataDao = new UpdataAppDataDao();
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
         String getbody = null;
         String parameter = null;
-        Lg.e("到达AppGetAllDataIO");
+        Lg.e("到达"+getClass().getSimpleName());
         try {
             parameter = ReadAsChars(request);//解密数据
         } catch (Exception e) {
@@ -41,21 +44,20 @@ public class AppGetAllDataIO extends HttpServlet {
         boolean isOK;
         String filename="";
         try {
-            //复制db文件并重命名为登录用户的所属db文件
-//           filename = MD5.getMD5(webResponse.json);//避免中文时乱码，都一律转换成md5
-           filename =webResponse.json;//避免中文时乱码，都一律转换成md5
+           filename =webResponse.json;//此为经过md5转换过的用户名code
         } catch (Exception e) {
             Lg.e("文件或数据处理出错....");
+            return;
         }
         WebResponse back = new WebResponse();
-        if (updataAppDataDao.getAllDataForApp(back,filename)){
+        if (updataAppDataDao.getAllDataForApp(back,filename)){//获取相关的所有数据
             back.state = true;
             back.backString = "获取成功";
         }else{
             back.state = false;
             back.backString = "获取失败";
         }
-        back.size = MathUtil.toInt(updataAppDataDao.getDataCountForApp(filename));
+        back.size = MathUtil.toInt(updataAppDataDao.getDataCountForApp(filename));//获取所有数据的size
         back.FToken = System.currentTimeMillis()+"";
         response.getWriter().write(gson.toJson(back));
     }
