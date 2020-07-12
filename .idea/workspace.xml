@@ -10,20 +10,27 @@
     <bookmark url="file://$PROJECT_DIR$/out/artifacts/Assist/App4GoodsNotes/App4GoodsNotesFile.jsp" line="85" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="新增标签记账的web数据添加页面">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App4GoodsNotes/BackUpGoodsNotes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App4GoodsNotes/BackUpGoodsNotesDelete.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App4GoodsNotes/BaseUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App4GoodsNotes/ExcelExportUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App4GoodsNotes/FileManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist.zip" afterPath="$PROJECT_DIR$/out/artifacts/Assist.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/BuyAtBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Bean/BuyAtBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/ExcelExport.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/ExcelExport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/BuyAtBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Bean/BuyAtBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/ExcelExport.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/ExcelExport.class" />
+    <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/BackUpGoodsNotes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/BackUpGoodsNotesDelete.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/BaseUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/ExcelExportUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/FileManager$FileComparator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/App4GoodsNotes/FileManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/BackUpGoodsNotes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/BackUpGoodsNotesDelete.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/BaseUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/ExcelExportUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/FileManager$FileComparator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/App4GoodsNotes/FileManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200706-083753.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200708-063942.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200708-123310.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200709-082816.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200710-094925.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200712-103826.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/App4GoodsNotes/App4GoodsNotesFile.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerVueWeb/Bean/BuyAtBean.java" afterPath="$PROJECT_DIR$/src/ServerVueWeb/Bean/BuyAtBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/ExcelExport.java" afterPath="$PROJECT_DIR$/src/Utils/ExcelExport.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -492,6 +499,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Assist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App4GoodsNotes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1586,7 +1619,7 @@
       <workItem from="1594204806835" duration="8033000" />
       <workItem from="1594297707681" duration="8550000" />
       <workItem from="1594388975307" duration="4567000" />
-      <workItem from="1594564717078" duration="1341000" />
+      <workItem from="1594564717078" duration="1505000" />
     </task>
     <task id="LOCAL-00001" summary="调整">
       <created>1578969882554</created>
@@ -1700,11 +1733,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592757261154</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="新增货物笔记app的excel表格处理">
+      <created>1594566246485</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594566246485</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1588736000" />
+    <option name="totallyTimeSpent" value="1588900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1789,7 +1829,8 @@
     <MESSAGE value="新增标签记账的web数据展示" />
     <MESSAGE value="新增标签记账的web数据添加页面" />
     <MESSAGE value="新增标签记账的web数据登录页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增标签记账的web数据登录页面" />
+    <MESSAGE value="新增货物笔记app的excel表格处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增货物笔记app的excel表格处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2036,6 +2077,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
