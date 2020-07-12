@@ -137,7 +137,7 @@ public class ExcelExport {
          String fileAddress = "C:/LinsServer/AppExcel/";
          File f = new File(fileAddress);
          if (!f.exists()) {
-            f.mkdir();
+            f.mkdirs();
          }
          File file = new File(fileAddress + fileName);
          FileOutputStream fops = new FileOutputStream(file);

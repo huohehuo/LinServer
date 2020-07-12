@@ -14,6 +14,15 @@ public class BuyAtBean {
     public String FBuyName;
 
 
+    public String FSum;//数量
+    public String FPrice;//数量
+    public String FColorName;
+    public String FModelName;
+    public String FStuffName;
+    public String FUnitName;
+
+
+
     public String FCreateData;//创建日期
     public String FIsCloud;//是否备份云端
     public String FUseNum;//使用次数
