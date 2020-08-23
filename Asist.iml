@@ -31,5 +31,6 @@
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="axios" level="application" />
     <orderEntry type="library" name="lodash" level="application" />
+    <orderEntry type="library" name="paho-mqtt-client-1.0.1-sources" level="project" />
   </component>
 </module>

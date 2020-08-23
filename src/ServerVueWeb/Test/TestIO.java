@@ -7,6 +7,7 @@ import Utils.MathUtil;
 import WebSide.UserDao;
 import WebSide.WebResponse;
 import com.google.gson.Gson;
+import sun.misc.LRUCache;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Vector;
 
 import static WebSide.Utils.HttpRequestUtils.ReadAsChars;
 
@@ -32,6 +34,8 @@ public class TestIO extends HttpServlet {
         Lg.e("进入"+getClass().getSimpleName());
         gson = new Gson();
     }
+    private static List<String> stringList = new ArrayList<>();
+//    private static List<String> stringList = new Vector<>();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        Lg.e("进入"+getClass().getSimpleName());
@@ -50,7 +54,28 @@ public class TestIO extends HttpServlet {
         }
 
         WebResponse pBean = gson.fromJson(parameter, WebResponse.class);
-        testDao.saveData(pBean.json);
+        Lg.e("得到："+pBean.json);
+        if (stringList.contains(pBean.json)){
+            Lg.e("请勿重复写入:"+pBean.json);
+        }else{
+            stringList.add(pBean.json);
+            Lg.e(stringList.size()+"写入:"+stringList);
+        }
+
+        if (stringList.size()>60){
+            Lg.e("超过 20 ");
+            List<String> strings = new ArrayList<>();
+            for(int i = 0;i <=20;i++) {
+                strings.add(stringList.get(i));
+            }
+            stringList.removeAll(strings);
+            Lg.e("剩余",stringList);
+        }
+//        Lg.e("写入"+reqCache);
+
+
+
+//        testDao.saveData(pBean.json);
 //
 //
 //        AppLinkBean loginBean = gson.fromJson(pBean.json, AppLinkBean.class);
