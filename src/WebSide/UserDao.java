@@ -162,7 +162,7 @@ public class UserDao {
 		try {
 			conn = JDBCUtil.getUserDbConn(dbname);
 			String SQL = "UPDATE Tb_User set FToken=?  WHERE FName_code='"+dbname+"'";
-			Lg.e("更新数据库语句"+SQL);
+//			Lg.e("更新数据库语句"+SQL);
 			sta = conn.prepareStatement(SQL);
 			sta.setString(1,company.FToken);
 			int i = sta.executeUpdate();

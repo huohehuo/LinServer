@@ -28,7 +28,7 @@ import java.util.TimerTask;
  */
 @WebServlet(urlPatterns = "/StartMqtt")
 public class StartMqtt extends HttpServlet {
-    public static String TOPIC = "pdatest";
+    public static String TOPIC = "checkBefore";
     public static final String MQTT_Broker_URL = "tcp://129.211.59.124:1883";
     //    public static final String MQTT_Broker_URL = "tcp://192.168.31.55:1883";
     public static final String MQTT_ClientId = "assist";
@@ -69,7 +69,7 @@ public class StartMqtt extends HttpServlet {
 
 
 
-    private void startMqtt(){
+    public void startMqtt(){
         try {
             mqttClient = new MqttClient(MQTT_Broker_URL, MQTT_ClientId, new MemoryPersistence());
             mqttClient.setCallback(new MqttCallback() {
@@ -120,6 +120,15 @@ public class StartMqtt extends HttpServlet {
             isOkMqtt = false;
             Lg.e("启动失败",e.getMessage());
             checkMqtt();
+        }
+    }
+
+    @Override
+    public void destroy() {
+        try {
+            mqttClient.disconnect();
+        } catch (MqttException e) {
+
         }
     }
 

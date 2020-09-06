@@ -57,6 +57,7 @@ public class AppWebLoginIO extends HttpServlet {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date curDate = new Date();
         loginBean.FCreateTime = format.format(curDate);
+        Lg.e("查询对象",loginBean);
         boolean isOK;
             try {
                 //复制db文件并重命名为登录用户的所属db文件

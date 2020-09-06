@@ -35,7 +35,7 @@ public class BackUpAppDataIO extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String getbody = null;
         String parameter = null;
-        Lg.e("到达");
+        Lg.e("进入"+getClass().getSimpleName());
         try {
             parameter = ReadAsChars(request);//解密数据
         } catch (Exception e) {

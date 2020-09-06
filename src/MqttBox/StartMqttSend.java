@@ -1,5 +1,6 @@
 package MqttBox;
 
+import Server.BarcodeOnly.T;
 import Utils.Lg;
 import com.google.gson.Gson;
 import org.eclipse.paho.client.mqttv3.*;
@@ -23,12 +24,11 @@ import java.util.TimerTask;
 @WebServlet(urlPatterns = "/StartMqttSend")
 public class StartMqttSend extends HttpServlet {
 
-    private MqttClient mqttClient;
+//    private MqttClient mqttClient;
     private MqttMessage messageMqtt;
-    private boolean isOkMqtt;
 
     public StartMqttSend(){
-        Lg.e("创建StartMqtt");
+        Lg.e("创建StartMqttSend");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,8 +41,9 @@ public class StartMqttSend extends HttpServlet {
         Gson gson = new Gson();
         Lg.e("启动Mqtt");
         String message = "Assist发送数据";
-        mqttClient = StartMqtt.mqttClient;
-        if (!mqttClient.isConnected()){
+//        mqttClient = T.mqttClient;
+        Lg.e("MQTT对象",null == T.mqttClient);
+        if (!T.mqttClient.isConnected()){
             Lg.e("未开启");
             return;
         }
@@ -50,9 +51,10 @@ public class StartMqttSend extends HttpServlet {
         messageMqtt = new MqttMessage();
         messageMqtt.setQos(1);  //保证消息能到达一次
         messageMqtt.setRetained(true);
-        messageMqtt.setPayload(new String(message.getBytes(),"UTF-8").getBytes());
+//        messageMqtt.setPayload(new String(paramter.getBytes(),"UTF-8").getBytes());
+        messageMqtt.setPayload(paramter.getBytes());
         try {
-            MqttDeliveryToken token = StartMqtt.topic1.publish(messageMqtt);
+            MqttDeliveryToken token = T.topic1.publish(messageMqtt);
             token.waitForCompletion();
             Lg.e(messageMqtt.isRetained()+"=======retained状态");
         } catch (MqttException e) {

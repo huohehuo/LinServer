@@ -11,6 +11,8 @@
 <%@ page import="java.io.*,java.util.*"%>
 <%@ page import="WebSide.FeedBack" %>
 <%@ page import="Utils.Lg" %>
+<%@ page import="MqttBox.StartMqtt" %>
+<%@ page import="Server.BarcodeOnly.T" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,15 +28,25 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+
+
+<body onload="a()">
 <%
+//    Lg.e(request.getContextPath());
+//    Lg.e(java.net.InetAddress.getLocalHost().getHostAddress());
+//    Lg.e(request.getLocalPort()+"");
+//    String url ="http://"+java.net.InetAddress.getLocalHost().getHostAddress()+":"+request.getLocalPort()+request.getContextPath()+"/StartMqtt";
     response.sendRedirect(request.getContextPath()+"/App/AppWebLogin.jsp");
+//    response.sendRedirect(request.getContextPath()+"/StartMqtt");//启动mqtt,与上面那个启动冲突，二者其一
+
+        T.startMqtt();//启动mqtt
+//    StartMqtt t = new StartMqtt();
+//    t.startMqtt();
 %>
 <%--<frameset rows="56,*" frameborder="no" border="0">
     <frame src="item_TopNavbar.jsp" scrolling="no">
     <frame src="Home.jsp" name="index_show" scrolling="auto">
 </frameset>--%>
 </body>
-
 
 </html>

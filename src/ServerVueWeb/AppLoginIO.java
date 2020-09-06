@@ -29,45 +29,47 @@ import static WebSide.Utils.HttpRequestUtils.ReadAsChars;
 @WebServlet(urlPatterns = "/AppLoginIO")
 public class AppLoginIO extends HttpServlet {
     Gson gson;
+    UserDao userDao;
     @Override
     public void init() throws ServletException {
         Lg.e("初始化"+getClass().getSimpleName());
         gson = new Gson();
+        userDao = new UserDao();
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
-        Lg.e("进入"+getClass().getSimpleName());
-        UserDao userDao = new UserDao();
-        String getbody=null;
-        String filename="";
-        String parameter= null;
-        try{
-            parameter = ReadAsChars(request);//解密数据
-        }catch (Exception e){
-            response.getWriter().write(gson.toJson(new WebResponse(false,"上传失败,请求体解析错误")));
-        }
+        synchronized (this){
+            Lg.e("进入"+getClass().getSimpleName());
+            String getbody=null;
+            String filename="";
+            String parameter= null;
+            try{
+                parameter = ReadAsChars(request);//解密数据
+            }catch (Exception e){
+                response.getWriter().write(gson.toJson(new WebResponse(false,"上传失败,请求体解析错误")));
+            }
 
-        WebResponse pBean = gson.fromJson(parameter, WebResponse.class);
-        AppLinkBean loginBean = gson.fromJson(pBean.json, AppLinkBean.class);
-        loginBean.FToken = System.currentTimeMillis()+"";
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date curDate = new Date();
-        loginBean.FCreateTime = format.format(curDate);
-        boolean isOK;
+            WebResponse pBean = gson.fromJson(parameter, WebResponse.class);
+            AppLinkBean loginBean = gson.fromJson(pBean.json, AppLinkBean.class);
+            loginBean.FToken = System.currentTimeMillis()+"";
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Date curDate = new Date();
+            loginBean.FCreateTime = format.format(curDate);
+            boolean isOK;
             try {
                 //复制db文件并重命名为登录用户的所属db文件
                 filename = MD5.getMD5(loginBean.FName);//避免中文时乱码，都一律转换成md5
                 loginBean.FName_code = filename;
 //                session.setAttribute(Info.FUserDbName, filename);//记录md5处理过的用户名，用于区分db文件并获取数据
 //                if (FileControl.hasFile(Info.copyDbFile(filename))){//存在文件，修改
-                    if (MathUtil.toD(userDao.checkHasUser(loginBean.FName,loginBean.FPwd))>0){//db中是否有数据
-                        Lg.e("存在用户数据");
-                        isOK = userDao.changeUser(loginBean,filename);//修改数据
-                    }else{
-                        Lg.e("不存在用户数据，新增");
-                        isOK = userDao.addUserDB(loginBean,filename);//添加数据到db文件
-                    }
+                if (MathUtil.toD(userDao.checkHasUser(loginBean.FName,loginBean.FPwd))>0){//db中是否有数据
+                    Lg.e("存在用户数据");
+                    isOK = userDao.changeUser(loginBean,filename);//修改数据
+                }else{
+                    Lg.e("不存在用户数据，新增");
+                    isOK = userDao.addUserDB(loginBean,filename);//添加数据到db文件
+                }
 //                }else{//不存在文件，创建
 //                    FileControl.copyFile(Info.BaseDbFile,Info.copyDbFile(filename));
 //                    isOK = userDao.addUserDB(loginBean,filename);//添加数据到db文件
@@ -87,6 +89,8 @@ public class AppLoginIO extends HttpServlet {
                 back.FToken = System.currentTimeMillis()+"";
                 response.getWriter().write(gson.toJson(back));
             }
+        }
+
 
         // 如果不存在 session 会话，则创建一个 session 对象
 //        HttpSession session = request.getSession(true);
