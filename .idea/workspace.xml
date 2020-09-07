@@ -11,27 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/MqttUserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/UploadMqttUserIO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/BarcodeOnly/T.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/BarcodeOnly/T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/ForAppWeb/AppWebLoginIO.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/ForAppWeb/AppWebLoginIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/JDBCUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Utils/JDBCUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/WebSide/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Server/BarcodeOnly/T.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/BarcodeOnly/T.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppGetAllDataSizeIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/AppLoginIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/BackUpAppDataIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/ForAppWeb/AppWebLoginIO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/ForAppWeb/AppWebLoginIO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/JDBCUtil.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Utils/JDBCUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/UserDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/WebSide/UserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MqttBox/StartMqtt.java" afterPath="$PROJECT_DIR$/src/MqttBox/StartMqtt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" afterPath="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/BarcodeOnly/T.java" afterPath="$PROJECT_DIR$/src/Server/BarcodeOnly/T.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/JDBCUtil.java" afterPath="$PROJECT_DIR$/src/Utils/JDBCUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -124,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartMqttSend.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartMqttSend.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
+            <state relative-caret-position="68">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="T.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="T.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Server/BarcodeOnly/T.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="237">
+              <caret line="78" column="108" lean-forward="false" selection-start-line="78" selection-start-column="108" selection-end-line="78" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -273,8 +255,8 @@
         <option value="$PROJECT_DIR$/src/MqttBox/UploadMqttUserIO.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/MqttUserDao.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/StartMqtt.java" />
-        <option value="$PROJECT_DIR$/src/Server/BarcodeOnly/T.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" />
+        <option value="$PROJECT_DIR$/src/Server/BarcodeOnly/T.java" />
       </list>
     </option>
   </component>
@@ -1608,7 +1590,7 @@
       <workItem from="1599109936947" duration="143000" />
       <workItem from="1599321866823" duration="4871000" />
       <workItem from="1599402634075" duration="5078000" />
-      <workItem from="1599485291231" duration="7582000" />
+      <workItem from="1599485291231" duration="7722000" />
     </task>
     <task id="LOCAL-00001" summary="调整">
       <created>1578969882554</created>
@@ -1750,11 +1732,18 @@
       <option name="project" value="LOCAL" />
       <updated>1599408622036</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="加入MQTT模块测试">
+      <created>1599495753109</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599495753109</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1634554000" />
+    <option name="totallyTimeSpent" value="1634694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2256,18 +2245,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
+    <entry file="file://$PROJECT_DIR$/src/Server/BarcodeOnly/T.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="42" column="71" lean-forward="true" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
+        <state relative-caret-position="237">
+          <caret line="78" column="108" lean-forward="false" selection-start-line="78" selection-start-column="108" selection-end-line="78" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/BarcodeOnly/T.java">
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>

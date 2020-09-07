@@ -51,7 +51,7 @@ public class StartMqttSend extends HttpServlet {
         messageMqtt = new MqttMessage();
         messageMqtt.setQos(1);  //保证消息能到达一次
         messageMqtt.setRetained(true);
-        messageMqtt.setPayload(message.getBytes("UTF-8"));
+        messageMqtt.setPayload(message.getBytes("UTF-8"));//这里需要设置转码格式，不然app和Assist会存在乱码现象
         try {
             MqttDeliveryToken token = T.topic1.publish(messageMqtt);
             token.waitForCompletion();
