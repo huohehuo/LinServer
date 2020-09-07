@@ -37,12 +37,12 @@ public class StartMqttSend extends HttpServlet {
         Connection conn = null;
         PreparedStatement sta = null;
         ResultSet rs = null;
-        String paramter = request.getParameter("json");
+        String message = request.getParameter("json");
         Gson gson = new Gson();
-        Lg.e("启动Mqtt");
-        String message = "Assist发送数据";
+//        String message = "Assist发送数据";
+//        String message = new String("Assist发送数据".getBytes(),"UTF-8");
 //        mqttClient = T.mqttClient;
-        Lg.e("MQTT对象",null == T.mqttClient);
+//        Lg.e("MQTT对象",null == T.mqttClient);
         if (!T.mqttClient.isConnected()){
             Lg.e("未开启");
             return;
@@ -51,8 +51,7 @@ public class StartMqttSend extends HttpServlet {
         messageMqtt = new MqttMessage();
         messageMqtt.setQos(1);  //保证消息能到达一次
         messageMqtt.setRetained(true);
-//        messageMqtt.setPayload(new String(paramter.getBytes(),"UTF-8").getBytes());
-        messageMqtt.setPayload(paramter.getBytes());
+        messageMqtt.setPayload(message.getBytes("UTF-8"));
         try {
             MqttDeliveryToken token = T.topic1.publish(messageMqtt);
             token.waitForCompletion();

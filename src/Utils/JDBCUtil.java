@@ -64,6 +64,12 @@ public class JDBCUtil {
 		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbUser.db");
 		return conn;
 	}
+	public static Connection getMqttUserDbConn(String dbname) throws ClassNotFoundException, SQLException{
+		Class.forName("org.sqlite.JDBC");
+		Connection conn = DriverManager.getConnection("jdbc:sqlite://c:/properties/dbMqttUser.db");
+		return conn;
+	}
+
 	public static Connection getUserDataConn(String dbname) throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
 		try {

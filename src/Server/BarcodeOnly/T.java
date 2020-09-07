@@ -15,7 +15,7 @@ import java.util.TimerTask;
 
 public class T {
 
-    public static String TOPIC = "checkBefore";
+    public static String TOPIC = "XuTing";
     public static final String MQTT_Broker_URL = "tcp://129.211.59.124:1883";
     //    public static final String MQTT_Broker_URL = "tcp://192.168.31.55:1883";
     public static final String MQTT_ClientId = "assist";
@@ -74,8 +74,9 @@ public class T {
                 @Override
                 public void messageArrived(MqttTopic topic, MqttMessage message) throws Exception {
                     String string = message.toString();
-                    Lg.e("收到数据"+topic+message.toString().length(),string);//中文会乱码
-                    Lg.e("收到数据"+topic+message.toString().length(),new String(message.getPayload(),"UTF-8"));
+                    Lg.e("数据体",message);
+                    Lg.e("收到数据"+topic+message.toString().length(),string);//中文会乱码(从Assist发布的话，这里正常中文，下面反而会乱码)
+                    Lg.e("收到数据"+topic+message.toString().length(),new String(message.getPayload(),"UTF-8"));//由app，和服务器发送的数据，中文正常
                 }
 
                 @Override
