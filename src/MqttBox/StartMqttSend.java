@@ -26,6 +26,7 @@ public class StartMqttSend extends HttpServlet {
 
 //    private MqttClient mqttClient;
     private MqttMessage messageMqtt;
+    public static MqttTopic topic1;
 
     public StartMqttSend(){
         Lg.e("创建StartMqttSend");
@@ -39,6 +40,7 @@ public class StartMqttSend extends HttpServlet {
         ResultSet rs = null;
         String message = request.getParameter("json");
         Gson gson = new Gson();
+        topic1 = T.mqttClient.getTopic(message+"_XuTing");
 //        String message = "Assist发送数据";
 //        String message = new String("Assist发送数据".getBytes(),"UTF-8");
 //        mqttClient = T.mqttClient;
@@ -53,7 +55,7 @@ public class StartMqttSend extends HttpServlet {
         messageMqtt.setRetained(true);
         messageMqtt.setPayload(message.getBytes("UTF-8"));//这里需要设置转码格式，不然app和Assist会存在乱码现象
         try {
-            MqttDeliveryToken token = T.topic1.publish(messageMqtt);
+            MqttDeliveryToken token = topic1.publish(messageMqtt);
             token.waitForCompletion();
             Lg.e(messageMqtt.isRetained()+"=======retained状态");
         } catch (MqttException e) {

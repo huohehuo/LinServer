@@ -57,8 +57,50 @@ public class MqttUserDao {
 		return has;
 	}
 
-
-
+	//
+	public List<MqttUserBean> findAll(){
+		List<MqttUserBean> pus = new ArrayList<>();
+		try {
+			conn = JDBCUtil.getMqttUserDbConn("");
+			String SQL = "SELECT FName_code,FToken FROM Tb_User";
+			sta = conn.prepareStatement(SQL);
+			rs = sta.executeQuery();
+			while (rs.next()) {
+				MqttUserBean bean = new MqttUserBean(
+						rs.getString("FName_code"),
+						rs.getString("FToken")
+				);
+				pus.add(bean);
+			}
+		} catch (ClassNotFoundException e) {
+		} catch (SQLException e) {
+		}finally {
+			JDBCUtil.close(rs,sta,conn);
+		}
+		return pus;
+	}
+	//
+	public List<TypeBean> findAllType(){
+		List<TypeBean> pus = new ArrayList<>();
+		try {
+			conn = JDBCUtil.getMqttUserDbConn("");
+			String SQL = "SELECT FName,FNumber FROM Tb_Type";
+			sta = conn.prepareStatement(SQL);
+			rs = sta.executeQuery();
+			while (rs.next()) {
+				TypeBean bean = new TypeBean(
+						rs.getString("FName"),
+						rs.getString("FNumber")
+				);
+				pus.add(bean);
+			}
+		} catch (ClassNotFoundException e) {
+		} catch (SQLException e) {
+		}finally {
+			JDBCUtil.close(rs,sta,conn);
+		}
+		return pus;
+	}
 
 
 
@@ -456,28 +498,7 @@ public class MqttUserDao {
 //		return puser;
 //	}
 //
-//	// ���������û�
-//	public List<PUser> findAll() throws Exception {
-//		DbUtil dbu = new DbUtil();
-//		dbu.connDb();
-//		List<PUser> pus = new ArrayList<PUser>();
-//		PreparedStatement prepStmt = dbu.getPstm("select * from user");
-//		ResultSet rs = prepStmt.executeQuery();
-//		while (rs.next()) {
-//			PUser pu = new PUser();
-//			pu.setRid(rs.getInt(1));
-//			pu.setName(rs.getString(2));
-//			pu.setPassword(rs.getString(3));
-//			pu.setSex(rs.getString(4));
-//			pu.setAge(rs.getInt(5));
-//			pu.setClue(rs.getString(6));
-//			pu.setVip(rs.getString(7));
-//			pu.setMishi(rs.getString(8));
-//			pus.add(pu);
-//		}
-//		dbu.closeDb();
-//		return pus;
-//	}
+
 //
 //	// ɾ���û�-------------------------web------------------------------
 //	public void remove(PUser stu) throws Exception {
