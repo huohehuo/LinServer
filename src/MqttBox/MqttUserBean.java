@@ -9,13 +9,15 @@ public class MqttUserBean {
     public String FToken;
     public String FCreateTime;
     public String Img_Logo;
+    public String FIsVip;
 
     public MqttUserBean() {
 
     }
-    public MqttUserBean(String code,String token) {
+    public MqttUserBean(String code,String token,String vip) {
         this.FName_code = code;
         this.FToken = token;
+        this.FIsVip = vip;
     }
 
 }

@@ -36,10 +36,11 @@ public class MqttUserDao {
 			if (MathUtil.toD(num)>0){
 				return true;
 			}else{
-				String insertSql = "INSERT INTO Tb_User (FName_code) VALUES (?)";
+				String insertSql = "INSERT INTO Tb_User (FName_code,FIsVip) VALUES (?,?)";
 //				String insertSql = "INSERT INTO Tb_User (FName, FPwd,FName_code,FToken,FCreateTime,Img_Logo) VALUES (?)";
 				sta = conn.prepareStatement(insertSql);
 				sta.setString(1,code);
+				sta.setString(2,"0");
 				int i = sta.executeUpdate();
 				if(i>0){
 					has = true;
@@ -62,13 +63,14 @@ public class MqttUserDao {
 		List<MqttUserBean> pus = new ArrayList<>();
 		try {
 			conn = JDBCUtil.getMqttUserDbConn("");
-			String SQL = "SELECT FName_code,FToken FROM Tb_User";
+			String SQL = "SELECT FName_code,FToken,FIsVip FROM Tb_User";
 			sta = conn.prepareStatement(SQL);
 			rs = sta.executeQuery();
 			while (rs.next()) {
 				MqttUserBean bean = new MqttUserBean(
 						rs.getString("FName_code"),
-						rs.getString("FToken")
+						rs.getString("FToken"),
+						rs.getString("FIsVip")
 				);
 				pus.add(bean);
 			}
@@ -79,29 +81,49 @@ public class MqttUserDao {
 		}
 		return pus;
 	}
-	//
-	public List<TypeBean> findAllType(){
-		List<TypeBean> pus = new ArrayList<>();
-		try {
-			conn = JDBCUtil.getMqttUserDbConn("");
-			String SQL = "SELECT FName,FNumber FROM Tb_Type";
-			sta = conn.prepareStatement(SQL);
-			rs = sta.executeQuery();
-			while (rs.next()) {
-				TypeBean bean = new TypeBean(
-						rs.getString("FName"),
-						rs.getString("FNumber")
-				);
-				pus.add(bean);
-			}
-		} catch (ClassNotFoundException e) {
-		} catch (SQLException e) {
-		}finally {
-			JDBCUtil.close(rs,sta,conn);
-		}
-		return pus;
-	}
+    //删除公司项目相关数据
+    public boolean deleteUser(String code){
+        try {
+            conn = JDBCUtil.getMqttUserDbConn("");
+            String SQL = "DELETE FROM Tb_User WHERE FName_code = '"+code+"'";
+            Lg.e("删除项目："+SQL);
+            sta = conn.prepareStatement(SQL);
+            boolean b = sta.execute();
+            Lg.e("删除",b);
+            return b;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtil.close(null,sta,conn);
+        }
+        return false;
+    }
 
+
+    //获取vip表数据
+    public List<TypeBean> findAllType(){
+        List<TypeBean> pus = new ArrayList<>();
+        try {
+            conn = JDBCUtil.getMqttUserDbConn("");
+            String SQL = "SELECT FName,FNumber FROM Tb_Type";
+            sta = conn.prepareStatement(SQL);
+            rs = sta.executeQuery();
+            while (rs.next()) {
+                TypeBean bean = new TypeBean(
+                        rs.getString("FName"),
+                        rs.getString("FNumber")
+                );
+                pus.add(bean);
+            }
+        } catch (ClassNotFoundException e) {
+        } catch (SQLException e) {
+        }finally {
+            JDBCUtil.close(rs,sta,conn);
+        }
+        return pus;
+    }
 
 
 
@@ -306,33 +328,7 @@ public class MqttUserDao {
 	public String getDeleteCode(){
 		return "fangzuokeji12345789!@#$%";
 	}
-	//删除公司项目相关数据
-	public boolean deleteCompany(String appid){
-		try {
-			conn = JDBCUtil.getMqttUserDbConn("");
-			String SQL = "DELETE FROM Tb_Company WHERE AppID = '"+appid+"'";
-			Lg.e("删除项目："+SQL);
-			sta = conn.prepareStatement(SQL);
-			boolean b = sta.execute();
-			if (!b){
-				//同时删掉版本信息表的数据
-				String SQL2 = "DELETE FROM Tb_UpgradeBean WHERE AppID = '"+appid+"'";
-				Lg.e("删除项目2："+SQL2);
-				sta = conn.prepareStatement(SQL2);
-				boolean b2 = sta.execute();
-				Lg.e("删除版本信息",b2);
-			}
-			Lg.e("删除",b);
-			return b;
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}finally {
-			JDBCUtil.close(rs,sta,conn);
-		}
-		return false;
-	}
+
 
 //	public List<FeedBackBean> getFeedBack(){
 //		List<FeedBackBean> list = new ArrayList<>();

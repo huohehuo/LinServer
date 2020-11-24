@@ -45,6 +45,7 @@
         Lg.e("链接",basevuelink);
 //    String basevuelink = Info.BaseVueLink;
     MqttUserDao aa = new MqttUserDao();
+    List<TypeBean> listType = aa.findAllType();
 %>
 <jsp:include page="../headLayout.jsp"/>
 
@@ -86,20 +87,26 @@
                                        style="width: 100%;margin-right: 10px">
                             </div>
                         </div>
-                        <h4 >设置对应的账套信息</h4>
                         <a id="selectA">dddd</a>
-                        <select id="selectType" style="width:150px" name="state" selectedIndex="$!{state}">
+                        <select id="selectType" style="width:150px" name="state">
                             <%
                                 //    List list = (List) request.getAttribute("pl_list");
-                                List listType = aa.findAllType();
                                 for (int i = 0; i < listType.size(); i++) {
                                     TypeBean rs = (TypeBean) listType.get(i);
+                                    if (rs.FName.equals("选项二")){
+                            %>
+                            <option value="<%=rs.FNumber %>" selected="selected"><%=rs.FName %></option>
+                            <%
+                                    }else{
                             %>
                             <option value="<%=rs.FNumber %>"><%=rs.FName %></option>
                             <%
+                                    }
+
                                 }
                             %>
                         </select>
+                        <h4 onclick="changeText()">设置对应的账套信息</h4>
 
 
                         <button type="submit" class="btn btn-primary">确定添加</button>
@@ -146,7 +153,7 @@
                 <tr>
                     <th>用户名Code(<%=list.size()%>)</th>
                     <th>Token</th>
-                    <%--<th>关联Cloud账户名</th>--%>
+                    <th>关联Cloud账户名</th>
                     <%--<th>关联Cloud密码</th>--%>
                     <%--<th>时间控制日期</th>--%>
                 </tr>
@@ -159,14 +166,35 @@
                 %>
 
                 <tr>
-                    <td><%=rs.FName_code %></td>
-                    <td><%=rs.FToken %></td>
-                    <%--<td><%=rs.user_name_link %></td>--%>
-                    <%--<td><%=rs.user_pwd_link %></td>--%>
+
+                        <td id="<%=rs.FName_code %>_code"><%=rs.FName_code %></td>
+                        <td id=""><%=rs.FToken %></td>
+                        <td>
+                            <select id="<%=rs.FName_code %>_slt" style="width:150px" name="<%=rs.FName_code %>" >
+                                <%
+                                    //    List list = (List) request.getAttribute("pl_list");
+                                    for (TypeBean bean: listType) {
+                                        if (bean.FNumber.equals(rs.FIsVip)){
+                                %>
+                                <option value="<%=bean.FNumber %>" selected="selected"><%=bean.FName %></option>
+                                <%
+                                }else{
+                                %>
+                                <option value="<%=bean.FNumber %>"><%=bean.FName %></option>
+                                <%
+                                        }
+                                    }
+                                %>
+                            </select>
+
+
+                        </td>
+                        <td><button type="submit" class="btn btn-primary">确定添加</button></td>
+                        <%--<td><a href="../AppUserSetVipIO?json=<%=rs.FName_code%>&slt=">删除</a></td>--%>
+                        <td><a href="../AppUserDeleteIO?json=<%=rs.FName_code%>">删除</a></td>
                     <%--<td><a href="../ActiveUser_find?json=<%=rs.getAppID()%>"><%=statisticalDao.getStatisticalNum4Appid(rs.getAppID()) %></a></td>--%>
 
                     <%--<td style="height: 45px;width:80px"><%=rs.getLast_use_date() %></td>--%>
-                    <%--<td><a href="../AppUserDeleteIO?json=<%=rs.user_name%>">删除</a></td>--%>
                     <%--<td><a href="../company_find_4log?json=<%=rs.getAppID()%>">程序更新日志</a></td>--%>
                 </tr>
                 </tbody>
@@ -178,6 +206,22 @@
 </div>
 
 <script>
+    function changeText()
+    {
+        //监听选中事件
+        $('#selectExample').change(function(data){
+            //获取选中项的值
+            var value = $("#selectExample option:selected").attr("value");
+            //输出日志
+            console.log("value=%s",value);
+        });
+        var <%=port%>
+//        var x=document.getElementById("selectType")
+//        x.options[x.selectedIndex].text="选项二"
+        var x=document.getElementById("aid")
+        x.text="选项二"
+    }
+
     $(function(){
         $('#name').bind('input propertychange', function() {
 //            var ss = document.getElementsByName("name")[0].value

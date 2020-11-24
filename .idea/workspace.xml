@@ -11,57 +11,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c314ea08-6d77-469a-9858-6948002aef46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dbMqttUser.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/AppUserAddIO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserBean.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/StartMqtt$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/StartMqtt$Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/StartMqtt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/StartMqttSend.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/TypeBean.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/UploadMqttUserIO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/BarcodeOnly/T$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/Server/BarcodeOnly/T$Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Test/IdempotentUtils$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/ServerVueWeb/Test/IdempotentUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/lib/paho-mqtt-client-1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/AppUserAddIO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserBean.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/StartMqtt$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/StartMqtt$Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/StartMqtt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/StartMqttSend.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/TypeBean.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/UploadMqttUserIO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/BarcodeOnly/T$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Server/BarcodeOnly/T$Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Test/IdempotentUtils$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/ServerVueWeb/Test/IdempotentUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200718-065328.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200718-114135.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200815-092402.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200817-122133.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200822-123722.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200823-090121.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200830-115208.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200830-123758.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200902-114620.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200903-011154.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200906-103024.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200906-120416.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200907-092804.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200908-125025.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200909-114400.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200909-121219.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/AppUserAddIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/MqttUserBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/TypeBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dbTest.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dbUser.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/AppUserDeleteIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/AppUserSetVipIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/AppUserDeleteIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/AppUserSetVipIO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200912-053954.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200912-070618.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200912-105230.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200912-110902.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200913-082612.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20200914-094805.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/3615583d-3a16-41ca-bde6-fe5f078951bd.corrupted.20201124-105401.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/AppUserDeleteIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MqttBox/AppUserSetVipIO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbMqttUser.db" afterPath="$PROJECT_DIR$/dbMqttUser.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserBean.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WEB-INF/classes/MqttBox/MqttUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserBean.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MqttBox/MqttUserDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MqttBox/MqttUserBean.java" afterPath="$PROJECT_DIR$/src/MqttBox/MqttUserBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MqttBox/MqttUserDao.java" afterPath="$PROJECT_DIR$/src/MqttBox/MqttUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" afterPath="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -89,73 +62,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttUserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MqttBox/MqttUserDao.java">
+      <file leaf-file-name="JDBCUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utils/JDBCUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-              <folding>
-                <element signature="e#5902#5904#0" expanded="false" />
-                <marker date="1599667558142" expanded="true" signature="659:714" ph="SELECT COUNT... Tb_User" />
-                <marker date="1599667558142" expanded="true" signature="946:989" ph="INSERT INTO Tb_User... " />
-                <marker date="1599667558142" expanded="true" signature="1616:1653" ph="SELECT FName... Tb_User" />
-                <marker date="1599667558142" expanded="true" signature="2165:2198" ph="SELECT FName... Tb_Type" />
-                <marker date="1599667558142" expanded="true" signature="2730:2851" ph="SELECT * FRO... Tb_Company" />
-                <marker date="1599667558142" expanded="true" signature="3330:3393" ph="SELECT COUNT... Tb_User" />
-                <marker date="1599667558142" expanded="true" signature="3949:4018" ph="SELECT * FRO... Login_Base" />
-                <marker date="1599667558142" expanded="true" signature="4580:4673" ph="INSERT INTO Tb_User... " />
-                <marker date="1599667558142" expanded="true" signature="5365:5423" ph="UPDATE Tb_Us... " />
-                <marker date="1599667558142" expanded="true" signature="8321:8369" ph="DELETE FROM " />
-                <marker date="1599667558142" expanded="true" signature="8511:8563" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MqttBox/TypeBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="-191">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadMqttUserIO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MqttBox/UploadMqttUserIO.java">
+      <file leaf-file-name="AppGetNoteDataIO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetNoteDataIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebSide/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-              <folding>
-                <marker date="1599407082573" expanded="true" signature="1219:1340" ph="SELECT * FRO... Tb_Company" />
-                <marker date="1599407082573" expanded="true" signature="1815:1878" ph="SELECT COUNT... Tb_User" />
-                <marker date="1599407082573" expanded="true" signature="2375:2430" ph="SELECT COUNT... Tb_User" />
-                <marker date="1599407082573" expanded="true" signature="2959:3028" ph="SELECT * FRO... Login_Base" />
-                <marker date="1599407082573" expanded="true" signature="3586:3679" ph="INSERT INTO Tb_User... " />
-                <marker date="1599407082573" expanded="true" signature="4367:4425" ph="UPDATE Tb_Us... " />
-                <marker date="1599407082573" expanded="true" signature="7311:7359" ph="DELETE FROM " />
-                <marker date="1599407082573" expanded="true" signature="7501:7553" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartMqttSend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-801">
-              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="132">
+              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -164,42 +85,71 @@
       <file leaf-file-name="AppUserSet.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="528">
+              <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#5626#6783#0#JSP" expanded="false" />
+                <element signature="e#5918#7075#0#JSP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppUserAddIO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MqttBox/AppUserAddIO.java">
+      <file leaf-file-name="AppShowVideo.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App/AppShowVideo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="29" column="93" lean-forward="true" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
+            <state relative-caret-position="316">
+              <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="T.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Server/BarcodeOnly/T.java">
+      <file leaf-file-name="App4GoodsNotesFile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App4GoodsNotes/App4GoodsNotesFile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1958">
-              <caret line="100" column="40" lean-forward="false" selection-start-line="100" selection-start-column="40" selection-end-line="101" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="1012">
+              <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppWebLogin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App/AppWebLogin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppWebLoginIO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/ForAppWeb/AppWebLoginIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebSide/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppUserDeleteIO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MqttBox/AppUserDeleteIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,8 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeToDetailIO.java" />
-        <option value="$PROJECT_DIR$/src/ServerVueWeb/AppWebHomeIO.java" />
         <option value="$PROJECT_DIR$/src/Server/PushDown/PushDownloadList.java" />
         <option value="$PROJECT_DIR$/src/Server/PushDown/PushDownList.java" />
         <option value="$PROJECT_DIR$/src/ServerVueWeb/WebJumpIO.java" />
@@ -320,11 +268,13 @@
         <option value="$PROJECT_DIR$/src/MqttBox/StartMqtt.java" />
         <option value="$PROJECT_DIR$/src/Server/BarcodeOnly/T.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/StartMqttSend.java" />
-        <option value="$PROJECT_DIR$/src/MqttBox/MqttUserBean.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/TypeBean.java" />
+        <option value="$PROJECT_DIR$/src/MqttBox/AppUserDeleteIO.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/MqttUserDao.java" />
-        <option value="$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp" />
+        <option value="$PROJECT_DIR$/src/MqttBox/MqttUserBean.java" />
         <option value="$PROJECT_DIR$/src/MqttBox/AppUserAddIO.java" />
+        <option value="$PROJECT_DIR$/src/MqttBox/AppUserSetVipIO.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp" />
       </list>
     </option>
   </component>
@@ -357,8 +307,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -378,9 +328,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,24 +426,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinsServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinsServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="MqttBox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -545,12 +474,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WebBox" />
+              <option name="myItemId" value="App4GoodsNotes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinsServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -568,12 +526,10 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/lib/sqlite-jdbc-3.8.7.jar" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\WebBox" />
-      <recent name="D:\LinSpace\LinsServer\web\WEB-INF\lib" />
-      <recent name="D:\LinSpace\LinsServer\lib" />
-      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\App4GoodsNotes" />
-      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\App" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\css" />
+      <recent name="D:\FZ-kingdee\LogServer\out\artifacts\Assist\MGM\feedBack" />
+      <recent name="E:\FZ-kingdee\LogServer\web\webpage" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="MqttBox" />
@@ -582,10 +538,12 @@
       <recent name="ServerVueWeb.ForAppWeb" />
       <recent name="ServerVueWeb" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\css" />
-      <recent name="D:\FZ-kingdee\LogServer\out\artifacts\Assist\MGM\feedBack" />
-      <recent name="E:\FZ-kingdee\LogServer\web\webpage" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\WebBox" />
+      <recent name="D:\LinSpace\LinsServer\web\WEB-INF\lib" />
+      <recent name="D:\LinSpace\LinsServer\lib" />
+      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\App4GoodsNotes" />
+      <recent name="D:\LinSpace\LinsServer\out\artifacts\Assist\App" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1613,7 +1571,14 @@
       <workItem from="1599485291231" duration="7754000" />
       <workItem from="1599497435772" duration="555000" />
       <workItem from="1599581549210" duration="1094000" />
-      <workItem from="1599666252488" duration="3339000" />
+      <workItem from="1599666252488" duration="3377000" />
+      <workItem from="1599880150169" duration="961000" />
+      <workItem from="1599903604546" duration="2515000" />
+      <workItem from="1599908789774" duration="3199000" />
+      <workItem from="1599922360758" duration="597000" />
+      <workItem from="1599956783450" duration="624000" />
+      <workItem from="1600048097419" duration="74000" />
+      <workItem from="1606229656960" duration="4796000" />
     </task>
     <task id="LOCAL-00001" summary="调整">
       <created>1578969882554</created>
@@ -1769,11 +1734,18 @@
       <option name="project" value="LOCAL" />
       <updated>1599495885183</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="加入MQTT模块测试">
+      <created>1599669605479</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1599669605479</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1639714000" />
+    <option name="totallyTimeSpent" value="1652518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1785,39 +1757,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36767897" sideWeight="0.5191898" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45986986" sideWeight="0.48081023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36767897" sideWeight="0.5191898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27213115" sideWeight="0.48081023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37199125" sideWeight="0.4926004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2322239" sideWeight="0.4926004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35008103" sideWeight="0.50739956" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1886,27 +1858,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/MGM/Company_set.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="119" column="36" lean-forward="false" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/MGM/CompanyList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="77" column="23" lean-forward="false" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebSide/Utils/FileControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebSide/bean/CommonResponse4Web.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -2010,14 +1961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App4GoodsNotes/BackUpGoodsNotes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -2053,13 +1996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/Dao/UpdataAppDataDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1317">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/ExcelExport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2074,27 +2010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/WebJumpIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetNoteDataIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetAllDataIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetAllDataSizeIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
@@ -2102,39 +2017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/BackUpAppDataIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="37" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/ForAppWeb/AppWebLoginIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppLoginIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="52" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3692#3728#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App/AppWebLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2156,11 +2042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1452">
           <caret line="89" column="81" lean-forward="false" selection-start-line="89" selection-start-column="81" selection-end-line="89" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1238#1239#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2168,26 +2049,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
           <caret line="100" column="40" lean-forward="false" selection-start-line="100" selection-start-column="40" selection-end-line="101" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebSide/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <marker date="1599407082573" expanded="true" signature="1219:1340" ph="SELECT * FRO... Tb_Company" />
-            <marker date="1599407082573" expanded="true" signature="1815:1878" ph="SELECT COUNT... Tb_User" />
-            <marker date="1599407082573" expanded="true" signature="2375:2430" ph="SELECT COUNT... Tb_User" />
-            <marker date="1599407082573" expanded="true" signature="2959:3028" ph="SELECT * FRO... Login_Base" />
-            <marker date="1599407082573" expanded="true" signature="3586:3679" ph="INSERT INTO Tb_User... " />
-            <marker date="1599407082573" expanded="true" signature="4367:4425" ph="UPDATE Tb_Us... " />
-            <marker date="1599407082573" expanded="true" signature="7311:7359" ph="DELETE FROM " />
-            <marker date="1599407082573" expanded="true" signature="7501:7553" ph="DELETE FROM " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2195,60 +2057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MqttBox/MqttUserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MqttBox/MqttUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="82" column="31" lean-forward="false" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-          <folding>
-            <element signature="e#5902#5904#0" expanded="false" />
-            <marker date="1599667558142" expanded="true" signature="659:714" ph="SELECT COUNT... Tb_User" />
-            <marker date="1599667558142" expanded="true" signature="946:989" ph="INSERT INTO Tb_User... " />
-            <marker date="1599667558142" expanded="true" signature="1616:1653" ph="SELECT FName... Tb_User" />
-            <marker date="1599667558142" expanded="true" signature="2165:2198" ph="SELECT FName... Tb_Type" />
-            <marker date="1599667558142" expanded="true" signature="2730:2851" ph="SELECT * FRO... Tb_Company" />
-            <marker date="1599667558142" expanded="true" signature="3330:3393" ph="SELECT COUNT... Tb_User" />
-            <marker date="1599667558142" expanded="true" signature="3949:4018" ph="SELECT * FRO... Login_Base" />
-            <marker date="1599667558142" expanded="true" signature="4580:4673" ph="INSERT INTO Tb_User... " />
-            <marker date="1599667558142" expanded="true" signature="5365:5423" ph="UPDATE Tb_Us... " />
-            <marker date="1599667558142" expanded="true" signature="8321:8369" ph="DELETE FROM " />
-            <marker date="1599667558142" expanded="true" signature="8511:8563" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App4GoodsNotes/App4GoodsNotesFile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MqttBox/TypeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2256,49 +2064,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/TypeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MqttBox/UploadMqttUserIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MqttBox/StartMqttSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-801">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#5626#6783#0#JSP" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/MqttUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="69" column="53" lean-forward="false" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#findAllType#0;class#MqttUserDao#0" expanded="false" />
+            <element signature="e#6783#6785#0" expanded="false" />
+            <element signature="e#9034#9035#0" expanded="false" />
+            <element signature="e#9074#9075#0" expanded="false" />
+            <marker date="1599909545539" expanded="true" signature="659:714" ph="SELECT COUNT... Tb_User" />
+            <marker date="1599909545539" expanded="true" signature="946:998" ph="INSERT INTO Tb_User... " />
+            <marker date="1599909545539" expanded="true" signature="1651:1695" ph="SELECT FName... Tb_User" />
+            <marker date="1599909545539" expanded="true" signature="2238:2287" ph="DELETE FROM " />
+            <marker date="1599909545539" expanded="true" signature="2897:2930" ph="SELECT FName... Tb_Type" />
+            <marker date="1599909545539" expanded="true" signature="3611:3732" ph="SELECT * FRO... Tb_Company" />
+            <marker date="1599909545539" expanded="true" signature="4211:4274" ph="SELECT COUNT... Tb_User" />
+            <marker date="1599909545539" expanded="true" signature="4830:4899" ph="SELECT * FRO... Login_Base" />
+            <marker date="1599909545539" expanded="true" signature="5461:5554" ph="INSERT INTO Tb_User... " />
+            <marker date="1599909545539" expanded="true" signature="6246:6304" ph="UPDATE Tb_Us... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MqttBox/AppUserAddIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="29" column="93" lean-forward="true" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
+        <state relative-caret-position="308">
+          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="36" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/MqttUserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/AppUserSetVipIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App4GoodsNotes/App4GoodsNotesFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetAllDataIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/WebJumpIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MqttBox/AppUserDeleteIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App/AppWebLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/ForAppWeb/AppWebLoginIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebSide/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/Dao/UpdataAppDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/BackUpAppDataIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="51" column="49" lean-forward="true" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerVueWeb/AppGetNoteDataIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/WebBox/AppUserSet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+          <folding>
+            <element signature="e#5918#7075#0#JSP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Assist/App/AppShowVideo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="116" column="30" lean-forward="true" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
           <folding />
         </state>
       </provider>
